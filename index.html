@@ -54,11 +54,27 @@
                 <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+                        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+                        <form class="contact-form">
+                            <div class="form-field">
+                                <label for="name" class="form-label">Имя</label>
+                                <input type="text" class="form-input" name="name" id="name" placeholder="">
+                            </div>
+                            <div class="form-field">
+                                <label for="tel" class="form-label">Телефон</label>
+                                <input type="tel" class="form-input" name="tel" id="tel">
+                            </div>
+                            <div class="form-field">
+                                <label for="name" class="form-label">Почта</label>
+                                <input type="email" class="form-input" name="email" id="email">
+                            </div>
+                        </form>
                         <button class="close-icon" data-modal-close>
                             <svg class="close-icon-black">
                                 <use href="./images/symbol-defs.svg#icon-close-black"></use>
                             </svg>
                         </button>
+                        
                     </div>
                 </div>
          </section>
