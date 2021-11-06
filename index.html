@@ -51,23 +51,51 @@
     <main>
          <section class="hero overlay">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <button type="button" class="site-button" data-modal-open>Заказать услугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                         <form class="contact-form">
                             <div class="form-field">
                                 <label for="name" class="form-label">Имя</label>
-                                <input type="text" class="form-input" name="name" id="name" placeholder="">
+                                    <div class="input">
+                                        <input type="text" class="form-input" name="name" id="name">
+                                        <svg class="form-svg">
+                                            <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                                        </svg>       
+                                    </div>
                             </div>
+                           
                             <div class="form-field">
-                                <label for="tel" class="form-label">Телефон</label>
-                                <input type="tel" class="form-input" name="tel" id="tel">
+                                <label for="name" class="form-label">Телефон</label>
+                                <div class="input">
+                                    <input type="tel" class="form-input" name="tel" id="tel">
+                                    <svg class="form-svg">
+                                        <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                                    </svg>
+                               </div>
                             </div>
                             <div class="form-field">
                                 <label for="name" class="form-label">Почта</label>
-                                <input type="email" class="form-input" name="email" id="email">
+                                <div class="input">
+                                    <input type="email" class="form-input" name="email" id="email">
+                                    <svg class="form-svg">
+                                        <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                                    </svg>
+                                </div>
                             </div>
+                            <div class="form-field textarea">
+                                <label for="name" class="form-label">Комментарий </label>
+                                <textarea name="comment" class="form-textarea" placeholder="Введите текст"></textarea>
+                               
+                         </div>
+                         <label class="checkbox-label">
+                            <input class="checkbox" type="checkbox" name="agreement">
+                            <span class="checkbox-icon"></span>
+                            Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link">Условия договора</a>
+                        </label>
+                              <button type="submit" class="site-button">Отправить</button>
+                           
                         </form>
                         <button class="close-icon" data-modal-close>
                             <svg class="close-icon-black">
@@ -326,7 +354,7 @@
     </main>
     <footer class="footer">
         <div class="container main">
-        <div class="left-content">
+        <div class="left-block">
             <a href="index.html" class="logo logo-footer">Web<span class="footer-logo-span">Studio</span></a>          
             <address>
                 <ul class="contact">
@@ -343,7 +371,7 @@
             </address>
         </div>
         
-        <div class="right-content">  
+        <div class="center-block">  
             <p class="footer-text">Присоединяйтесь</p>
             <ul class="social-list footer">
                 <li class="social-item">
@@ -369,6 +397,17 @@
                     </svg>
                 </a></li>
             </ul>
+        </div>
+        <div class="right-block">
+            <p class="footer-text">Подпишитесь на рассылку</p>
+            <div class="footer-input-form">
+                <input type="email" class="footer-email-input" name="email" placeholder="E-mail">
+                <button type="submit" class="site-button btn">Подписаться
+                    <svg class="submit-btn-icon">
+                        <use href="./images/symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
         </div>
     </footer>
