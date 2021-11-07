@@ -173,7 +173,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.site-button{
+.site-button {
   border-radius: 4px;
   border-width: 0;
   width: 200px;
@@ -192,7 +192,7 @@ body {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-button:hover,
-.site-button:focus{
+.site-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #188ce8;
 }
@@ -380,10 +380,11 @@ body {
   display: flex;
   align-items: baseline;
 }
-.center-block{
+.center-block {
   margin-right: 93px;
 }
-.left-block{
+.left-block {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .logo-footer {
@@ -422,11 +423,11 @@ body {
 .footer .social-icon {
   fill: var(--secondary-accent-color);
 }
-.footer-input-form{
+.footer-input-form {
   display: flex;
   align-items: center;
 }
-.footer-email-input{
+.footer-email-input {
   margin-right: 12px;
   width: 358px;
   height: 50px;
@@ -440,25 +441,25 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-email-input:hover,
-.footer-email-input:focus{
+.footer-email-input:focus {
   outline: 0;
   border-color: var(--primary-accent-color);
 }
-.footer-email-input::placeholder{
+.footer-email-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.site-button.btn{
+.site-button.btn {
   padding: 10px 29px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.submit-btn-icon{
+.submit-btn-icon {
   margin-left: 10px;
-  width:24px;
+  width: 24px;
   height: 24px;
 }
 /* Страница Портфолио */
@@ -613,7 +614,7 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
-  padding: 9px, 9px, 10px, 10px;
+  padding: 9px 9px 10px 10px;
 
   width: 30px;
   height: 30px;
@@ -627,7 +628,6 @@ body {
 .close-icon:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  
 }
 .close-icon-black {
   position: absolute;
@@ -641,7 +641,7 @@ body {
 .close-icon:hover .close-icon-black {
   fill: var(--primary-accent-color);
 }
-.contact-form{
+.contact-form {
   display: block;
 }
 .modal-text {
@@ -649,7 +649,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.17;
- 
+
   color: #212121;
 }
 .form-field {
@@ -666,38 +666,34 @@ body {
   color: #757575;
   text-align: left;
 }
-.input{
+.input {
   position: relative;
 }
 .form-input,
-.form-textarea{ 
+.form-textarea {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input{
+.form-input {
   height: 40px;
   padding-left: 42px;
-
 }
-.form-field.textarea{
+.form-field.textarea {
   margin-bottom: 20px;
 }
-.form-textarea{
+.form-textarea {
   position: relative;
   height: 120px;
   padding: 12px 16px;
   resize: none;
 }
-.form-field textarea::placeholder{
+.form-field textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-  ;
 }
-.form-input:hover,
 .form-input:focus,
-.form-textarea:hover,
-.form-textarea:focus{
+.form-textarea:focus {
   outline: var(--primary-accent-color);
   border: 1px solid var(--primary-accent-color);
 }
@@ -712,40 +708,37 @@ body {
   fill: var(--title-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input:hover + .form-svg,
-.form-input:focus + .form-svg{
+.form-input:focus + .form-svg {
   fill: var(--primary-accent-color);
 }
-.checkbox-label{
+.checkbox-label {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 30px;
-
 }
-.checkbox-link{
+.checkbox-link {
   margin-left: 5px;
   color: var(--primary-accent-color);
   text-decoration: underline;
-
 }
-.checkbox{
+.checkbox {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; 
+  appearance: none;
 }
-.checkbox-icon{ 
+.checkbox-icon {
   width: 16px;
   height: 15px;
   margin-right: 5px;
-  margin-left: 12px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   background-color: #fff;
 }
-.checkbox:checked + .checkbox-icon{
+.checkbox:checked + .checkbox-icon {
   border-color: var(--primary-accent-color);
   background-color: var(--primary-accent-color);
   background-origin: border-box;
